@@ -3,8 +3,8 @@ class Item  //父栏目类
 	private int iid;
 	private String name;
 	private String note;
-        public Submit[] submits; 	//一个父栏目下有多个子栏目
-        public Product[] products;    //一个父栏目下有多个商品
+        private Submit[] submits; 	//一个父栏目下有多个子栏目
+        private Product[] products;    //一个父栏目下有多个商品
 	public Item(int iid,String name,String note) {
 		this.iid = iid;
 		this.name = name;
@@ -37,8 +37,8 @@ class Submit  //子栏目类
 	private int sid;
 	private String name;
 	private String note;
-        public Product[] products;	//一个子类下有多个商品
-        public Item item;	//每个子类属于一个父类
+        private Product[] products;	//一个子类下有多个商品
+        private Item item;	//每个子类属于一个父类
 	public Submit(int sid,String name,String note) {
 		this.sid = sid;
 		this.name = name;
@@ -71,8 +71,8 @@ class Product  //商品类
 	private int pid;
 	private String name;
 	private double price;
-	public Submit submit;  //每一件商品属于一个子类
-	public Item item;  //每一件商品属于一个父类
+	private Submit submit;  //每一件商品属于一个子类
+	private Item item;  //每一件商品属于一个父类
 	public Product(int pid,String name,double price) {
 		this.pid = pid;
 		this.name = name;
