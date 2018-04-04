@@ -2,7 +2,7 @@ class Province  //省份类
 {
 	private int pid;
 	private String name;
-    public City[] citys;	//一个省份下有多个城市 
+    private City[] citys;	//一个省份下有多个城市 
 	public Province(int pid,String name) {
 		this.pid = pid;
 		this.name = name;
@@ -25,7 +25,7 @@ class City  //城市类
 {
 	private int cid;
 	private String name;
-	public Province province;  //一个城市属于一个省份
+	private Province province;  //一个城市属于一个省份
 	public City(int cid,String name) {
 		this.cid = cid;
 		this.name = name;
