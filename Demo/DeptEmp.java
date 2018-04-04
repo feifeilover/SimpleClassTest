@@ -3,7 +3,7 @@ class Dept
 	private int deptno;
 	private String dname;
 	private String loc;
-	public Emp[] emps;  //一个部门有多个雇员
+	private Emp[] emps;  //一个部门有多个雇员
 	public Dept(int deptno,String dname,String loc) {
 		this.deptno = deptno;
 		this.dname = dname;
@@ -30,8 +30,8 @@ class Emp
 	private String job;
 	private double sal;
 	private double comm;
-	public Dept dept;  //一个雇员属于一个部门
-	public Emp mgr;  //一个雇员有一个或零个领导
+	private Dept dept;  //一个雇员属于一个部门
+	private Emp mgr;  //一个雇员有一个或零个领导
 	public Emp(int empno,String ename,String job,double sal,double comm) {
 		this.empno = empno;
 		this.ename = ename;
