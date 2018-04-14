@@ -29,7 +29,7 @@ class Link  //定义一个链表类
 		}
 
 		public String getNode(int index) {  //根据索引取得数据
-			if(data.equals(this.data))  {
+			if(Link.this.foot ++ == index)  {
 				return this.data;
 			} else {
 				return this.next.getNode(index);
