@@ -1,0 +1,3 @@
+这里一共有两个小Demo、
+一个是银行存款：（一共三个java文件）Account.java    ATM.java     TestATM.java
+一个是石头剪刀布游戏:（一共四个java文件）Person.java   Game.java    Ai.java    TestGame.java
